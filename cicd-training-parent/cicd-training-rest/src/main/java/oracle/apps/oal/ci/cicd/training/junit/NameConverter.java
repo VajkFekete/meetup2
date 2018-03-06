@@ -13,7 +13,7 @@ public class NameConverter {
 
     public static String camelToUnderscore(String in) {
         StringBuilder out = new StringBuilder();
-        for (int i = 0; i < in.length(); i++) {
+        for (int i = 1; i < in.length(); i++) {
             if (Character.isUpperCase(in.charAt(i))) {
                 if (i != 0) {
                     out.append("_");
